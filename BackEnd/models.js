@@ -1,13 +1,3 @@
-// import { Sequelize } from "sequelize/types";
-
-// const User = Sequelize.define('user', {
-//     firstName : {
-//         types: 
-//     },
-//     lastName: { 
-
-//     }
-// })
 const Sequelize = require('sequelize')
 const db = require('./sequelizeInstance')
 const User = db.define('user', {
@@ -18,6 +8,12 @@ const User = db.define('user', {
    lastName: {
        type: Sequelize.STRING
    },
+   email: {
+    type: Sequelize.STRING
+},
+   password: {
+    type: Sequelize.STRING
+}
 })
 
 
